@@ -5,7 +5,7 @@ function refresh() {
     var current_date = Date.now();
     const GREEN_PLANE_RELEASE_DATE = new Date(2035, 0, 1); //1st january 2035
     
-    var diff_date = GREEN_PLANE_RELEASE_DATE.getDate() - current_date.getDate(); //results in ms
+    var diff_date = GREEN_PLANE_RELEASE_DATE.getTime() - current_date.getTime(); //results in ms
     console.log("diff_date = " + diff_date);
     var diff_jours = diff_date / (1000*3600*24);
     
