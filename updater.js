@@ -13,5 +13,5 @@ function refresh() {
     console.log("diff_seconds = " + diff_seconds);
     
     var element = document.getElementById("number_of_seconds");
-    element.innerHTML = diff_seconds;
+    element.innerHTML = Math.round(diff_seconds);
 }
